@@ -2,7 +2,7 @@
 # To learn more about KubeArmor visit: 
 # https://www.accuknox.com/kubearmor/ 
 
-apiVersion: security.kubearmor.com/v1
+apiVersion: security.kubearmor.co/v1
 kind: KubeArmorPolicy
 metadata:
   name: ksp-best-practice-cassandra-server-audit-log-data-cache-directory
