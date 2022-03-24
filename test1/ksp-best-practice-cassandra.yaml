@@ -17,5 +17,6 @@ spec:
     severity: 5
     matchPaths:
     - path: /etc/cassandra/jmxremote.password
+      path: /etc/cassandra
       ownerOnly: true
     action: Audit
