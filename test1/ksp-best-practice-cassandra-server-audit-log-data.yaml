@@ -19,6 +19,7 @@ spec:
     - dir: /var/lib/cassandra/data/
       recursive: true
     - dir: /var/lib/cassandra/commitlog/
+    - dir: /var/jk
       recursive: true
     - dir: /var/lib/cassandra/saved_caches/
       recursive: true
