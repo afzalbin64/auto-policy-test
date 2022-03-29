@@ -17,7 +17,7 @@ spec:
     severity: 5
     matchPaths:
     - path: /etc/cassandra/jmxremote.password
-    - path: /etc/cassandra/jk
+    - path: /etc/cassandra/jk/ko
     - path: /var/lib/cert
       ownerOnly: true
     action: Audit
