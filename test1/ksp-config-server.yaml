@@ -4,7 +4,7 @@ metadata:
   name: ksp-cassandra-server-audit-jmx-password-file
   namespace: default # Change your namespace
 spec:
-  tags: ["CASSANDRA", "BEST PRACTICE"]
+  tags: ["CASSANDRA", "BEST PRACTICES"]
   message: "Cassandra server JMX password file accessed"
   selector:
     matchLabels:
