@@ -1,0 +1,18 @@
+apiVersion: security.kubearmor.com/v1
+kind: KubeArmorPolicy
+metadata:
+  name: ksp-cassandra-server-audit-jmx-password-file
+  namespace: default # Change your namespace
+spec:
+  tags: ["CASSANDRA", "BEST PRACTICE"]
+  message: "Cassandra server JMX password file accessed"
+  selector:
+    matchLabels:
+      app: cass-server #change app: cass-server to match your label
+  file:
+    severity: 5
+    matchPaths:
+    - path: /etc/cassandra/jmxremote.password
+    - path: /etc/cassandra/jk
+      ownerOnly: true
+    action: Audit
