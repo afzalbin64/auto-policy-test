@@ -13,6 +13,7 @@ spec:
   selector:
     matchLabels:
       app: cass-server #change app: cass-server to match your label
+      label: app
   file:
     severity: 5
     matchPaths:
